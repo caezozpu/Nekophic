@@ -463,6 +463,7 @@ header.scrolled {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
+    align-items: stretch;
 }
 
 .service-card {
@@ -472,10 +473,11 @@ header.scrolled {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    height: 100%
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
-    height: 100%;
+    transition: all 0.4s ease;
 }
 
 .service-card::before {
