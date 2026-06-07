@@ -473,7 +473,7 @@ header.scrolled {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%
+    height: 100%;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
@@ -535,6 +535,7 @@ header.scrolled {
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .service-price {
