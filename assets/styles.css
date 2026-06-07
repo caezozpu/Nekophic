@@ -472,6 +472,9 @@ header.scrolled {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
     height: 100%;
 }
 
@@ -498,10 +501,10 @@ header.scrolled {
 }
 
 .service-card:hover {
-    transform: translateY(-15px) scale(1.02);
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(139, 24, 24, 0.05);
     border-color: rgba(139, 24, 24, 0.4);
-    box-shadow: 0 20px 60px rgba(139, 24, 24, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
 }
 
 .service-icon {
@@ -522,6 +525,7 @@ header.scrolled {
     font-weight: 600;
     margin-bottom: 15px;
     color: white;
+    letter-spacing: -0.5%;
 }
 
 .service-desc {
@@ -571,14 +575,14 @@ header.scrolled {
 }
 
 .btn-service {
-    background: rgba(139, 24, 24, 0.15);
-    border: 1px solid rgba(139, 24, 24, 0.4);
-    color: white;
-    padding: 10px 22px;
-    border-radius: 8px;
-    font-size: 13px;
     margin-top: auto;
-    align-self: flex-start;
+    background: transparent;
+    border: 1px solid var(--accent-red);
+    color: var(--text-main);
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s;
 }
 
 .btn-service:hover {
