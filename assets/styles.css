@@ -463,7 +463,11 @@ header.scrolled {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    align-items: stretch;
+}
+@media (max-width: 768px) {
+    .service-grid {
+        gap: 20px;
+    }
 }
 
 .service-card {
@@ -477,7 +481,6 @@ header.scrolled {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 20px;
-    transition: all 0.4s ease;
 }
 
 .service-card::before {
@@ -579,12 +582,14 @@ header.scrolled {
 
 .btn-service {
     margin-top: auto;
-    background: transparent;
+    background: rgba(139, 24, 24, 0.15);
     border: 1px solid var(--accent-red);
     color: var(--text-main);
-    padding: 12px 20px;
+    padding: 10px 20px;
     border-radius: 8px;
+    font-size: 13px;
     text-align: center;
+    display: inline-block;
     transition: all 0.3s;
 }
 
