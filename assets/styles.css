@@ -464,11 +464,19 @@ header.scrolled {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
 @media (max-width: 768px) {
-    .service-grid {
-        gap: 20px;
+    .services-grid { 
+        grid-template-columns: 1fr
+        gap: 20px; 
+        padding: 0 15px;
+    }
+    
+    .service-card:hover {
+        transform: none; /* Nonaktifkan translasi di mobile */
     }
 }
+
 
 .service-card {
     padding: 40px 30px;
@@ -506,11 +514,9 @@ header.scrolled {
 }
 
 .service-card:hover {
-    background: rgba(139, 24, 24, 0.05);
-    border-color: rgba(139, 24, 24, 0.4);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transform: translateY(-10px);
+transform: none;
 }
+
 
 .service-icon {
     width: 50px;
@@ -1422,4 +1428,16 @@ select.form-input option {
     background-color: #1a1a1a; 
     color: #ffffff;
     padding: 10px;
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 20px;
+    }
+    .services-grid {
+        gap: 15px;
+    }
+    .service-card {
+        padding: 30px 20px;
+    }
 }
