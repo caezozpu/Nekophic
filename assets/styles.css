@@ -467,11 +467,11 @@ header.scrolled {
 
 @media (max-width: 768px) {
     .services-grid { 
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
         gap: 20px; 
         padding: 0 15px;
     }
-    
+ 
     .service-card:hover {
         transform: none; /* Nonaktifkan translasi di mobile */
     }
@@ -536,7 +536,7 @@ transform: none;
     font-weight: 600;
     margin-bottom: 15px;
     color: white;
-    letter-spacing: -0.5%;
+    letter-spacing: -0.5em;
 }
 
 .service-desc {
